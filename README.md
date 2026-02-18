@@ -1,8 +1,8 @@
-# 🏅 Olympic Data ELT Pipeline
+#  Olympic Data ELT Pipeline
 
 A production-ready data engineering project that implements an **Extract, Load, Transform (ELT)** pipeline for Olympic athlete events data using modern data stack technologies.
 
-## 📊 Project Overview
+##  Project Overview
 
 This project demonstrates an end-to-end data pipeline that:
 - **Extracts** Olympic athlete events data from CSV files
@@ -11,7 +11,7 @@ This project demonstrates an end-to-end data pipeline that:
 - **Orchestrates** the entire workflow using Apache Airflow
 - **Containerizes** all components using Docker for reproducibility
 
-## 🛠️ Technical Skills Demonstrated
+##  Technical Skills Demonstrated
 
 ### **Data Engineering & ETL/ELT**
 - ✅ Design and implementation of ELT pipeline architecture
@@ -54,7 +54,7 @@ This project demonstrates an end-to-end data pipeline that:
 - ✅ Version control ready
 - ✅ Clear documentation
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────┐
@@ -85,7 +85,7 @@ This project demonstrates an end-to-end data pipeline that:
 └─────────────────────────────┘
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Docker Desktop installed
@@ -142,7 +142,7 @@ docker exec -it olympic-data-platform-postgres-1 psql -U airflow
 SELECT * FROM silver_olympic_events LIMIT 10;
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 olympic-data-platform/
@@ -164,7 +164,7 @@ olympic-data-platform/
 └── README.md                          # This file
 ```
 
-## 🔄 Pipeline Flow
+##  Pipeline Flow
 
 ### Task Order
 ```
@@ -191,32 +191,32 @@ install_deps → check_file_exists → load_raw_data → transform_to_silver
    - Creates `silver_olympic_events` table
    - Cleans data (handles NULLs, standardizes medals)
 
-## 🧪 Data Transformation Logic
+##  Data Transformation Logic
 
 The silver layer applies these transformations:
-- ✅ Standardized column names (lowercase, descriptive)
-- ✅ NULL age values → 0
-- ✅ NULL medals → 'No Medal'
-- ✅ Type casting and normalization
+-  Standardized column names (lowercase, descriptive)
+-  NULL age values → 0
+-  NULL medals → 'No Medal'
+-  Type casting and normalization
 
-## 🛑 Stopping the Pipeline
+##  Stopping the Pipeline
 
 ```bash
 docker-compose down         # Stop services
 docker-compose down -v      # Stop and remove volumes (fresh start)
 ```
 
-## 📈 Potential Enhancements
+##  Potential Enhancements
 
-- [ ] Add data quality tests (Great Expectations)
-- [ ] Implement incremental loading
-- [ ] Add Gold layer for aggregated metrics
-- [ ] Integrate dbt for transformations
-- [ ] Add monitoring with Prometheus/Grafana
-- [ ] Implement CI/CD pipeline
-- [ ] Add unit tests for extraction modules
+-  Add data quality tests (Great Expectations)
+-  Implement incremental loading
+-  Add Gold layer for aggregated metrics
+-  Integrate dbt for transformations
+-  Add monitoring with Prometheus/Grafana
+-  Implement CI/CD pipeline
+-  Add unit tests for extraction modules
 
-## 🤝 Technologies Used
+##  Technologies Used
 
 | Category | Technology |
 |----------|-----------|
@@ -226,11 +226,11 @@ docker-compose down -v      # Stop and remove volumes (fresh start)
 | Containerization | Docker, Docker Compose |
 | Database UI | pgAdmin 4 |
 
-## 📝 License
+##  License
 
 This project is open source and available under the MIT License.
 
-## 👤 Author
+##  Author
 
 Created as a demonstration of data engineering skills including ELT pipeline design, workflow orchestration, and containerized infrastructure.
 
